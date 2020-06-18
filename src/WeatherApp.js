@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CurrentTime from "./CurrentTime";
 import Units from "./Units";
 import Search from "./Search";
@@ -7,10 +7,13 @@ import Today from "./Today";
 import CurrentWeather from "./CurrentWeather";
 import Description from "./Description";
 
-export default class WeatherApp extends React.Component {
-  render = () => {
+export default function WeatherApp(props)  {
+  const [weatherData, setWeatherData] = useState({ready: false});
+
+function 
+
     return (
-      <div className="App">
+      <div className="Weatherapp">
         <CurrentTime />
         <Units />
         <br />
