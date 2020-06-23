@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Search.css";
+
 export default function Search() {
   return (
     <form
@@ -14,7 +16,7 @@ export default function Search() {
         id="search_bar"
       />
       <button type="submit" id="search_icon">
-        <i class="fas fa-search" />
+        <i class="fas fa-search"></i>
       </button>
     </form>
   );

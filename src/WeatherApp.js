@@ -7,6 +7,8 @@ import Today from "./Today";
 import CurrentWeather from "./CurrentWeather";
 import Description from "./Description";
 
+import "./Weatherapp.css";
+
 export default function WeatherApp(props) {
   return (
     <div className="WeatherApp">

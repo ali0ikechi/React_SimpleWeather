@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./CurrentTime.css";
+
 export default function CurrentTime(props) {
   return (
     <div className="CurrentTime">

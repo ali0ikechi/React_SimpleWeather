@@ -1,0 +1,53 @@
+.weather_app_wrapper {
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.weather_app {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  padding: 30px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+hr {
+  background: #000000;
+  height: 3px;
+  border-width: 0px;
+  max-width: 600px;
+  margin: 5px auto;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  box-sizing: border-box;
+  color: rgb(33, 37, 41);
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.col-2 {
+  box-sizing: border-box;
+  display: block;
+}
+
+h3 {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.forecast_img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+small {
+  display: block;
+  text-align: center;
+}

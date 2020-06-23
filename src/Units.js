@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Units.css";
+
 export default function Units() {
   return (
     <div class="units">
