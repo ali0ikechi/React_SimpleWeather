@@ -1,3 +1,13 @@
+#city {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+#date {
+  margin-top: 3px;
+  font-size: 20px;
+}
+
 #description {
   font-size: 20px;
   font-weight: 700;

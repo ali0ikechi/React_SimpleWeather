@@ -2,11 +2,11 @@ import React from "react";
 
 import "./CurrentWeather.css";
 
-export default function CurrentWeather() {
+export default function CurrentWeather(props) {
   return (
     <div className="CurrentWeather">
       <h1>
-        <span id="temperature">21</span>
+        <span id="temperature">{Math.round(props.temperature)}</span>
       </h1>
       <div className="units">
         <span className="C" id="celsius-link">
