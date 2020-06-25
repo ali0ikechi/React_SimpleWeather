@@ -5,6 +5,9 @@ import "./CurrentWeather.css";
 export default function CurrentWeather() {
   return (
     <div className="CurrentWeather">
+      <h1>
+        <span id="temperature">21</span>
+      </h1>
       <div className="units">
         <span className="C" id="celsius-link">
           °C
@@ -14,9 +17,6 @@ export default function CurrentWeather() {
           °F
         </span>
       </div>
-      <h1>
-        <span id="temperature">21</span>°
-      </h1>
     </div>
   );
 }

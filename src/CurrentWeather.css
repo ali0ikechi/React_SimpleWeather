@@ -7,8 +7,10 @@ h1 {
 }
 
 .units {
-  font-size: 15px;
-  text-align: right;
+  position: relative;
+  bottom: 150px;
+  left: 80%;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 .C,
