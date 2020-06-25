@@ -1,11 +1,7 @@
 import React from "react";
 import CurrentTime from "./CurrentTime";
-import Units from "./Units";
-import Search from "./Search";
-import City from "./City";
-import Today from "./Today";
-import CurrentWeather from "./CurrentWeather";
-import Description from "./Description";
+import Forecast from "./Forecast";
+import WeatherInfo from "./WeatherInfo";
 
 import "./Weatherapp.css";
 
@@ -16,83 +12,27 @@ export default function WeatherApp(props) {
         <div className="weather_app_wrapper>">
           <div className="weather_app">
             <CurrentTime />
-            <Units />
             <br />
             <br />
-            <Search />
+            <form
+              className="form-inline d-flex justify-content-center md-form form-sm"
+              id="search-form"
+            >
+              <input
+                className="form-control form-control-sm mr-3 w-75"
+                type="text"
+                placeholder="Where to?"
+                aria-label="Search"
+                id="search_bar"
+              />
+              <button type="submit" id="search_icon">
+                <i className="fas fa-search"></i>
+              </button>
+            </form>
             <hr />
-            <City />
-            <Today />
-            <CurrentWeather />
-            <Description />
+            <WeatherInfo />
             <br />
-            {/* <div className="Forecast_wrapper">
-            <h3 id="hourly">Hourly</h3>
-            <hr />
-            <br />
-            <div class="row weather-forecast" id="forecast">
-              <div class="col-2">
-                <h3>14:00</h3>
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  class="forecast_img"
-                />
-                <div class="weather-forecast-temp">
-                  <strong>21</strong> 20
-                </div>
-              </div>
-              <div class="col-2">
-                <h3>14:00</h3>
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  class="forecast_img"
-                />
-                <div class="weather-forecast-temp">
-                  <strong>21</strong> 20
-                </div>
-              </div>
-              <div class="col-2">
-                <h3>14:00</h3>
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  class="forecast_img"
-                />
-                <div class="weather-forecast-temp">
-                  <strong>21</strong> 20
-                </div>
-              </div>
-              <div class="col-2">
-                <h3>14:00</h3>
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  class="forecast_img"
-                />
-                <div class="weather-forecast-temp">
-                  <strong>21</strong> 20
-                </div>
-              </div>
-              <div class="col-2">
-                <h3>14:00</h3>
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  class="forecast_img"
-                />
-                <div class="weather-forecast-temp">
-                  <strong>21</strong> 20
-                </div>
-              </div>
-              <div class="col-2">
-                <h3>14:00</h3>
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  class="forecast_img"
-                />
-                <div class="weather-forecast-temp">
-                  <strong>21</strong> 20
-                </div>
-              </div>
-            </div>
-          </div> */}
+            <Forecast />
           </div>
           <small className="small">
             <a

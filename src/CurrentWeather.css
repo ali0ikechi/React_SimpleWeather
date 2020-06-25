@@ -5,3 +5,20 @@ h1 {
   font-weight: 900;
   margin-bottom: 10px;
 }
+
+.units {
+  font-size: 15px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.C,
+.F {
+  transition: all 200ms ease-in-out;
+}
+
+.C:hover,
+.F:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: 700;
+}

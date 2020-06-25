@@ -1,0 +1,25 @@
+h3 {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.forecast_img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+.weather-forecast {
+  margin-top: 10px;
+  box-sizing: border-box;
+  color: rgb(33, 37, 41);
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.col-2 {
+  box-sizing: border-box;
+  display: block;
+}
