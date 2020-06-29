@@ -19,9 +19,12 @@ export default function Forecast(props) {
         <h3>Hourly</h3>
         <hr />
         <div className="weather-forecast row">
-          {forecast.list.slice(0, 6).map(function (forecastItem) {
-            return <ForecastPreview data={forecastItem} />;
-          })}
+          <ForecastPreview data={forecast.list[0]} />
+          <ForecastPreview data={forecast.list[1]} />
+          <ForecastPreview data={forecast.list[2]} />
+          <ForecastPreview data={forecast.list[3]} />
+          <ForecastPreview data={forecast.list[4]} />
+          <ForecastPreview data={forecast.list[5]} />
         </div>
       </div>
     );
