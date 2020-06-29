@@ -4,10 +4,40 @@ import CurrentWeather from "./CurrentWeather";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
+  let now = new Date();
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let day = days[now.getDay()];
+  let date = now.getDate();
+  let month = months[now.getMonth()];
   return (
     <div className="WeatherInfo">
       <h2 id="city">{props.data.city}</h2>
-      <h3 id="date">Sunday — 14 June</h3>
+      <h3 id="date">
+        {day} — {date} {month}
+      </h3>
       <CurrentWeather celsius={props.data.temperature} />
       <div className="row descriptions">
         <div className="col-6">

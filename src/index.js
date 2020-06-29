@@ -6,4 +6,4 @@ import WeatherApp from "./WeatherApp";
 import "./index.css";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<WeatherApp />, rootElement);
+ReactDOM.render(<WeatherApp defaultCity="Berlin" />, rootElement);

@@ -61,7 +61,7 @@ export default function WeatherApp(props) {
                   id="search_bar"
                   onChange={handleCityChange}
                 />
-                <button type="submit" value="search" id="search_icon">
+                <button type="submit" id="search_icon">
                   <i className="fas fa-search"></i>
                 </button>
               </form>
