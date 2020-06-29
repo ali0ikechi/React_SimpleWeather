@@ -6,12 +6,13 @@
 #date {
   margin-top: 3px;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 #description {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #description::first-letter {
@@ -22,7 +23,7 @@
   text-align: right;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 h4 {

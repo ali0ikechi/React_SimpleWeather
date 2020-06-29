@@ -47,7 +47,6 @@ export default function WeatherApp(props) {
             <div className="weather_app">
               <CurrentTime />
               <br />
-              <br />
               <form
                 onSubmit={handleSubmit}
                 className="form-inline d-flex justify-content-center md-form form-sm"
