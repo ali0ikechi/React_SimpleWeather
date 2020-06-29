@@ -18,7 +18,6 @@ export default function WeatherApp(props) {
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       city: response.data.name,
-      date: new Date(response.data.dt * 1000),
       max: Math.round(response.data.main.temp_max),
       min: Math.round(response.data.main.temp_min),
     });
@@ -73,6 +72,7 @@ export default function WeatherApp(props) {
               <a
                 href="https://github.com/ali0ikechi/React_SimpleWeather"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Open Source Code{" "}
               </a>
